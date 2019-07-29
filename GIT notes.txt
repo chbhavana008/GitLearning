@@ -1,0 +1,100 @@
+//Create github repository
+1) go to github.com
+2) sign up and then sign in to account
+3) click on create repository
+4) Copy the repository link
+
+//download git bash
+Go to https://git-scm.com/downloads and download Github
+
+//go to the directory where we need to synch with github
+$ cd
+
+$cd/c
+
+//to list all the files
+$cd ls
+
+//copy the path from Git site for ur repository
+ 
+//To set username
+$ git config --global user.name "chbhavana008"
+
+//to set email  id
+$ git config --global user.email chbhavana008@gmail.com
+
+//to clone the git repository created on github.com
+$ git clone (paste the path which u copied from site)
+$ git clone https://github.com/chbhavana008/TestGit.git
+
+
+//add any file in the TestGit that directory we created in system and enter the following the command in bash to synch
+$git add "file name".extension
+$ git add test.txt
+
+//To check the status
+$git status
+
+
+//to commit the newly added file, -m is first commited message
+$git commit -m "first committ" "filename"
+$ git commit -m "first commit" test.txt
+
+
+//u need to push to appear in gitrepository
+$ git push -u origin master
+
+
+//modifiy any data in file and status command , it should give status as modified
+
+
+
+
+//to fetch data
+git fetch origin master
+git merge origin master
+
+//again commit the file to save changes in got repository
+$ git commit -m "second commit" test.txt
+
+//again push the file
+$ git push -u origin master
+
+//to revert code back to previous versions
+git reset --hard <commit>
+
+git reset --hard origin/master
+
+//to rollback un committed changes
+git checkout --filename
+
+
+
+=======================================integration with eclipse=============================
+
+
+1)Click on open perspective
+
+2)Select git option
+
+pre-requisite:copy the git repository https link
+
+3)click on clone git repsitory option , automatically data will be populated
+
+4)select store option so that in future it will not ask for credentials again
+
+5)Select master branch and click on next
+
+6)Click on finish, with this repository will be synched in local machine in a path given in above step
+
+=======================Now integrate  with eclipse project==================================
+
+
+7)Right click on project, select team option and then share option
+
+8)Enter target(git location) and source(eclipse project details) locations
+
+
+
+
+https://www.youtube.com/watch?v=rb5OL-QQPw4
